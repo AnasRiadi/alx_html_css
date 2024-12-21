@@ -1,0 +1,119 @@
+/* Custom Background Colors and Fonts */
+body {
+    background-color: #f4f4f9; /* Light grey background */
+    font-family: 'Josefin Sans', sans-serif; /* Consistent font */
+    color: #333; /* Dark grey text for readability */
+}
+
+header {
+    background-color: #ff6347; 
+    color: white; 
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #e04b35;
+}
+
+header .logo {
+    font-size: 36px; 
+    margin-right: 10200px; 
+    display: inline-block; 
+    vertical-align: middle; 
+}
+header ul{
+    color: white;
+}
+
+
+/* Section-Specific Styling */
+article {
+    background-color: #fff; /* White background for the main content */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+article h2 {
+    font-size: 32px; /* Larger heading for the article */
+    color: #333; /* Dark grey text */
+    margin-bottom: 20px;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+article a {
+    color: #ff6347; /* Accent link color */
+    text-decoration: none;
+}
+
+article a:hover {
+    color: #e04b35;
+    text-decoration: underline;
+}
+
+aside {
+    background-color: #f9f9f9; /* Light grey background for the sidebar */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1; /* Takes 1/3 of the width in the flex layout */
+    overflow-y: auto; /* Scrollable content */
+}
+
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Links styling */
+a {
+    color: #ff6347; /* Matches the header color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e04b35;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments for mobile users */
+@media (max-width: 800px) {
+    body.works_on_smartphone {
+        display: block;
+    }
+
+    header {
+        padding: 15px 0;
+        text-align: left; /* Adjust for smaller screens */
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        display: block;
+        margin: 10px;
+    }
+
+    article, aside {
+        flex: none; /* Disable flex for stacking on small screens */
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+    aside, article {
+        padding: 15px;
+    }
+}
