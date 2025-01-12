@@ -1,0 +1,429 @@
+:root {
+  --primary-color: #FF6565;
+  --dark-bg: #071629;
+  --text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+.header {
+  background: var(--dark-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.logo span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.cta-button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #ff4f4f;
+}
+
+.hero-description {
+  max-width: 800px;
+  margin: 4rem auto 0;
+  padding: 0 1rem;
+}
+
+.hero-description p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #ffffff99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .hero-content {
+    padding-top: 8rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    margin-top: 2rem;
+  }
+}
+.what-we-do {
+    padding: 5rem 10%;
+    text-align: center;
+    background: #ffffff;
+    color: var(--section-text);
+  }
+  
+  .what-we-do h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+  
+  .section-description {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    color: #071629;
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .service-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+
+    
+  }
+  
+  .service-item h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--section-text);
+  }
+  
+  .service-item p {
+    font-size: 0.9rem;
+    color: #071629;
+    line-height: 1.6;
+  }
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      gap: 1.5rem;
+    }
+  
+    .hero-content {
+      padding-top: 8rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-description {
+      margin-top: 2rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+}
+
+:root {
+  --primary-color: #FF6565;
+  --dark-bg: #071629;
+  --text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+.header {
+  background: var(--dark-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.logo img {
+  height: 32px;
+  cursor: pointer;
+}
+
+.logo-toggle {
+  display: none;
+}
+
+.logo .sections {
+  display: none;
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--dark-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+/* This is the key CSS for the toggle functionality */
+@media (max-width: 768px) {
+  .logo-toggle:checked ~ .sections {
+    display: flex;
+  }
+}
+
+.logo .sections a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.logo .sections a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: lowercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/headphones_hero_1.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+}
+
+.cta-button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #ff4f4f;
+}
+
+.hero-description {
+  max-width: 800px;
+  margin: 4rem auto 0;
+  padding: 0 1rem;
+}
+
+.hero-description p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #ffffff99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo .sections {
+    display: none !important; /* Force hide on desktop */
+  }
+}
